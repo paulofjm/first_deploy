@@ -7,7 +7,7 @@ from fastapi import FastAPI, UploadFile, File
 app = FastAPI(docs_url='/', title="Oficina DM BIMaster - PUC-Rio")
 
 # Carregar modelo
-pipeline = joblib.load('breast_pipeline.pkl')
+pipeline = joblib.load(r"C:\Users\paulo\Documents\BI-Master_PUC_RIO\Data_Mining\Aula_Deploy\Git-API-13032024\breast_pipeline.pkl")
 
 
 @app.post("/predict")
