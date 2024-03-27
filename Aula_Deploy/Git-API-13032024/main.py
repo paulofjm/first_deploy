@@ -14,7 +14,7 @@ def main(args):
     current_directory = os.path.dirname(os.path.abspath(__file__))
 
     # Diretório da subpasta que contém app.py
-    app_directory = os.path.join(current_directory, "Aula_Deploy", "Git-API-13032024")
+    app_directory = os.path.join(current_directory) #, "Aula_Deploy", "Git-API-13032024")
 
     # Comando para iniciar o Uvicorn com o módulo app
     os.system(f'uvicorn app:app --reload --app-dir "{app_directory}"' )
